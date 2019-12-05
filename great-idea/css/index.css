@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -16,51 +16,210 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+/* Landing Page */
+nav {
+  display: flexbox;
+  float: left;
+}
+
+nav a {
+  padding: 0 0 0 70px;
+  color: gray;
+  text-decoration: none;
+}
+
+.whole {
+  width: 100%;
+  display: flexbox;
+  float: left;
+}
+.halves {
+  width: 48%;
+  display: flexbox;
+  float: left;
+  padding: 0 0 40px 0;
+}
+
+.headertext {
+  vertical-align: top;
+}
+
+.banner {
+  width: 100%;
+}
+
+.third {
+  display: flexbox;
+  float: left;
+
+  width: 31%;
+  padding: 0 0 40px 0;
+}
+footer p {
+  text-align: center;
+}
+
+.headertext {
+  padding: 75px 0 0 75px;
+}
+
+.header h1 {
+  font-size: 70px;
+}
+.logo {
+  padding: 30px 0 0 100px;
+}
+button {
+  margin-left: 70px;
+}
+.picture {
+  padding: 75px 0 0 150px;
+}
+
+.image {
+  width: 400px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.services-page {
+  width: 62%;
+  padding-left: 50px;
+  margin: 0 auto;
+}
+#services-header-img {
+  margin: 0 auto;
+  width: 50%;
+  
+}
+.services {
+  border-bottom: 1px solid black;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+.digital-design-box {
+  display: flexbox;
+  background: rgb(238, 234, 234);
+  border: 1px solid black;
+  width: 45%;
+  justify-content: space-around;
+  float: left;
+  height: 26vh;
+  margin: 15px;
+  padding: 15px;
+}
+.learn-more {
+  background: white;
+  width: 150px;
+  height: 4vh;
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+.divider {
+  display: flexbox;
+  width: 100%;
+  margin: 15px;
+  text-align: left;
+  float: left;
+  border-top: solid black 2px;
+}
+div li {
+  list-style-type: square;
+  line-height: 2;
+}
+#service-image {
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  flex-flow: row;
+}
+#services-banner {
+  width: 95%;
+  height: 300px;
+  margin: 20px auto;
+}
+#service-footer {
+  margin: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.service-split {
+  width: 48%;
+  display: flexbox;
+  float: left;
+  padding: 0 0 40px 0;
+}
+#half-image{
+	width:93%;
+	margin-left:13px;
+}
